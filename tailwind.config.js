@@ -1,8 +1,5 @@
-
-import plugin from "tailwindcss-animate";
-
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
@@ -74,15 +71,7 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
-      zIndex: {
-        '100': 100,
-        '110': 110,
-        '120': 120,
-        '130': 130,
-        '140': 140,
-      }
     },
   },
-  plugins: [plugin],
+  plugins: [require("tailwindcss-animate")],
 }
-
